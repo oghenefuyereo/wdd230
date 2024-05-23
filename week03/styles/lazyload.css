@@ -1,0 +1,31 @@
+/* styles/lazyload.css */
+
+.lazy-loading {
+    margin: 0 auto;
+    max-width: 1200px; /* Adjust max-width to your preference */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lazy-loading picture {
+    flex: 0 0 calc(33.33% - 20px); /* Adjust the width of each item */
+    margin: 10px; /* Adjust margin between items */
+    position: relative; /* Ensure images respect the parent */
+}
+
+.lazy-loading img {
+    width: 100%;
+    background-color: #000;
+    animation: fade 15s;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,37 @@
+html {
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    /* This is a vendor extension */
+}
+
+body {
+    margin: 0;
+}
+
+main {
+    display: block;
+}
+
+small {
+    font-size: 80%;
+}
+
+a {
+    background-color: transparent;
+}
+
+input {
+    border-radius: 0;
+}
+
+iframe {
+    border: 0;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

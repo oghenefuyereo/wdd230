@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oghenefuyere Okiotorhoro - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Oghenefuyere Okiotorhoro - Home">
+    <meta name="author" content="Oghenefuyere Okiotorhoro">
+    <meta property="og:title" content="Oghenefuyere Okiotorhoro - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development - Oghenefuyere Okiotorhoro - Home">
+    <meta property="og:image" content="https://oghenefuyereo.github.io/wdd230/chamber/images/logo.png">
+    <meta property="og:url" content="https://oghenefuyereo.github.io/wdd230/chamber/index.html">
+    <meta property="fb:app_id" content="268916888092354">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+      <img src="images/logo.png" alt="">
+        <nav id="animateme">
+            <button id="myButton"></button> <!-- Corrected typo here -->
+            <ul class="menuLinks Open">
+                <li class="current-menu-item"><a href="index.html">Home</a></li>
+                <li class="current-menu-item"><a href="discover.html">Discover</a></li>
+                <li class="current-menu-item"><a href="directory.html">Directory</a></li>
+                <li class="current-menu-item"><a href="">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="hero">
+        <div id="hero-box">
+            <img id="hero-img" src="images/hero-img.png" alt="People enjoying white water rafting" loading="lazy">
+        </div>
+        <section id="hero-msg-d">
+            <div class="home-title-d">
+            <h2>Discover</h2>
+        </div>
+        </section>
+    </div>
+    <div class="visit-event">
+        <h1>Visit local storage</h1>
+    </div>
+    <div id="mainContent">
+        <div class="sidebar">
+            <section class="custom-section">
+                <h2>Canadian Public Holidays</h2>
+                <div id="holidaysList" class="holiday-list"></div>
+            </section>
+            <section class="weather">
+                <h2>Weather Forecast Update</h2>
+                <h3>Chamber of Commerce</h3>
+                <p>Weather information will be here</p>
+            </section>
+            <section class="displayWeather">
+                <h2>Weather Forecast</h2>
+                <h3>Chamber of Commerce</h3>
+                <p id="weatherInfo"></p>
+                <input type="text" id="locationInput" placeholder="Enter location">
+                <button onclick="getWeather()">Get Weather</button>
+            </section>
+        </div>
+        <div class="main-content">
+            <main>
+                <figure id="figure1">
+                    <picture id="picture1">
+                        <img id="img1" src="images/lazyload1.jpg" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+                    </picture>
+                    <figcaption>Kitten looking adorable</figcaption>
+                </figure>
+                <figure id="figure2">
+                    <picture id="picture2">
+                        <img id="img2" src="images/lazyload2.jpg" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+                    </picture>
+                    <figcaption>Kitten playing with yarn</figcaption>
+                </figure>
+                <figure id="figure3">
+                    <picture id="picture3">
+                        <img id="img3" src="images/lazyload6.jpg" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+                    </picture>
+                    <figcaption>Sleepbaskety kitten in a </figcaption>
+                </figure>
+                <figure id="figure4">
+                    <picture id="picture4">
+                        <img id="img4" src="images/lazyload3.jpg" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+                    </picture>
+                    <figcaption>Kitten exploring outdoors</figcaption>
+                </figure>
+                <figure id="figure5">
+                    <picture id="picture5">
+                        <img id="img5" src="images/lazyload4.jpg" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+                    </picture>
+                    <figcaption>Curious kitten peeking</figcaption>
+                </figure>
+                <figure id="figure6">
+                    <picture id="picture6">
+                        <img id="img6" src="images/lazyload5.jpg" alt="Placeholder Kitten Image" loading="lazy" width="400" height="600">
+                    </picture>
+                    <figcaption>Kitten with bright eyes</figcaption>
+                </figure>
+            </main>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="grid-container">
+            <div class="grid-item">
+                <h3>Greater Fort Erie Chamber of Commerce</h3>
+                <ul>
+                    <li>Fort Erie ON</li>
+                    <li>Monday to Thursday: 9am–4pm</li>
+                    <li>Friday: 9am - 12pm</li>
+                </ul>
+
+                <div class="icons">
+                    <a href="#"><img src="images/facebook.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/twitter.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/instragram.svg" class="social-icon" alt=""></a>
+                </div>
+                <a class="contact" href="contactus.html">Contact</a>
+            </div>
+            <div class="grid-item">
+                <h3>Niagara Falls Chamber of Commerce</h3>
+                <ul>
+                    <li>4056 Dorchester Rd</li>
+                    <li>Niagara Falls On L2E 6M9</li>
+                    <li>Mon to Thurs: 9am–4:30pm</li>
+                    <li>Fri: 9:00am - 12:00pm</li>
+                </ul>
+
+                <div class="icons">
+                    <a href="#"><img src="images/facebook.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/twitter.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/instragram.svg" class="social-icon" alt=""></a>
+                </div>
+                <a class="contact" href="contactus.html">Contact</a>
+            </div>
+            <div class="grid-item">
+                <h3>Port Colborne-Wainfleet Chamber of Commerce</h3>
+                <ul>
+                    <li>296 Fielden Ave.</li>
+                    <li>Port Colborne ON L3K 3K1</li>
+                    <li>Mon to Thurs: 9:00am–4:30pm</li>
+                    <li>Friday: 9:00am - 12:00pm</li>
+                </ul>
+
+                <div class="icons">
+                    <a href="#"><img src="images/facebook.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/twitter.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/instragram.svg" class="social-icon" alt=""></a>
+                </div>
+                <a class="contact" href="contactus.html">Contact</a>
+            </div>
+            <div class="grid-item">
+                <h3>Welland/Pelham Chamber of Commerce</h3>
+                <ul>
+                    <li>800 Niagara St , Unit R56</li>
+                    <li>Welland ON L3C 5Z4</li>
+                    <li>Monday to Thurs: 9am–4:30pm</li>
+                    <li>Fri: 9:00am - 12:00pm</li>
+                </ul>
+
+                <div class="icons">
+                    <a href="#"><img src="images/facebook.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/twitter.svg" class="social-icon" alt=""></a>
+                    <a href="#"><img src="images/instragram.svg" class="social-icon" alt=""></a>
+                </div>
+                <a class="contact" href="contactus.html">Contact</a>
+            </div>
+        </div>
+        <hr>
+        <p id="copyright">
+            &copy; <span id="currentYear"></span> Oghenefuyere Okiotorhoro, Canada
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/event.js"></script>
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/weather-input.js"></script>
+    <script src="scripts/weather.js"></script>
+    <script src="scripts/visits.js"></script>
+    <script src="scripts/lazy-loading.js"></script>
+</body>
+
+</html>

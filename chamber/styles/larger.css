@@ -1,0 +1,65 @@
+@media screen and (min-width: 800px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul li {
+        display: flex;
+        margin-left: 25px;
+        height: auto;
+    }
+
+    nav ul li:last-child {
+        margin-right: 0;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #000000;
+        padding: 5px 10px;
+        border: #ccc solid 1px;
+        border-radius: 5px;
+    }
+
+    nav ul li.active a {
+        background-color: #000000;
+        color: #fff;
+    }
+
+    #myButton {
+        display: none;
+    }
+
+    nav {
+        grid-template-rows: 1fr;
+    }
+
+    ul.menuLinks,
+    ul.menuLinks.open {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    ul.menuLinks a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    .sidebar {
+        width: 300px;
+        flex-shrink: 0;
+    }
+
+    .main-content {
+        flex-grow: 1;
+    }
+    .sidebar {
+        width: 400px;
+    }
+
+    .main-content {
+        padding: 20px 40px;
+    }
+    #mainContent {
+        flex-direction: row;
+    }
+}
+
