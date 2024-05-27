@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oghenefuyere Okiotorhoro - WDD 230 - Web Frontend Development</title>
+    <meta name="description" content="WDD 230 - Web Frontend Development - Oghenefuyere Okiotorhoro - Home">
+    <meta name="author" content="Oghenefuyere Okiotorhoro">
+    <meta property="og:title" content="Oghenefuyere Okiotorhoro - WDD 230 - Web Frontend Development">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="WDD 230 - Web Frontend Development - Oghenefuyere Okiotorhoro - Home">
+    <meta property="og:image" content="https://oghenefuyereo.github.io/wdd230/images/profile_display.jpg">
+    <meta property="og:url" content="https://oghenefuyereo.github.io/wdd230/index.html">
+    <meta property="fb:app_id" content="268916888092354">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <header>
+        <img src="images/profile.jpg" alt="">
+        <h3>Oghenefuyere Okiotorhoro</h3>
+    </header>
+    <img id="darkModeButton" src="images/dark-theme-svgrepo-com.svg" alt="Dark Mode">
+    <nav id="animateme">
+        <button id="myButton"></button> <!-- Corrected typo here -->
+        <ul class="menuLinks Open">
+            <li class="current-menu-item"><a href="index.html">Home</a></li>
+            <li class="current-menu-item"><a
+                    href="https://oghenefuyereo.github.io/wdd230/chamber/index.html">Chamber</a></li>
+            <li class="current-menu-item"><a href="week01/chamber-site-plan.html">Site Plan</a></li>
+            <li class="current-menu-item"><a href="">Form</a></li>
+        </ul>
+    </nav>
+    <div class="hero">
+        <picture>
+            <source srcset="images/hero-small.webp" media="(max-width: 400px)">
+            <source srcset="images/hero-large.webp" media="(max-width: 500px)">
+            <img src="images/hero-large.webp" alt="table setting" width="640" height="750">
+        </picture>
+        <span class="overlay-text">Church Of Jesus Latter day Temple</span>
+    </div>
+
+    <main>
+        <h1>WDD 230: Web Frontend Development</h1>
+        <div class="horizontal-line"></div>
+        <section class="card">
+            <h2>Learning Activities</h2>
+            <ul>
+                <li><a href="https://oghenefuyereo.github.io/wdd230/week01/holygrail.html">Learning Activity</a></li>
+                <li><a href="https://oghenefuyereo.github.io/wdd230/week02/design.html">Learning Activity</a></li>
+                <li><a href="https://oghenefuyereo.github.io/wdd230/week02/bom.html">Learning Activity</a></li>
+                <li><a href="week03/images/landscape.webp">Learning Activity</a></li>
+                <li><a href="https://oghenefuyereo.github.io/wdd230/Week03/responsive-images.html">Learning Activity</a>
+                </li>
+            </ul>
+        </section>
+        <section>
+            <h2>Information</h2>
+            <p>Weather information will be here</p>
+            <div class="visits"></div>
+        </section>
+    </main>
+    <div class="map-container">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2917.381660653157!2d-79.2802150240257!3d43.0123531936431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d3499b3e45d0e7%3A0x67c3b12581e54ca3!2s111%20Silvan%20Dr%2C%20Welland%2C%20ON%20L3C%206C1!5e0!3m2!1sen!2sca!4v1716183402015!5m2!1sen!2sca"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <footer>
+        <p id="copyright">
+            &copy; <span id="currentYear"></span> Oghenefuyere Okiotorhoro, Canada
+        </p>
+        <p id="lastModified"></p>
+    </footer>
+    <script src="scripts/getDate.js"></script>
+    <script src="scripts/weather.js"></script>
+</body>
+
+</html>
