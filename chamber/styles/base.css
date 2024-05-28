@@ -642,12 +642,14 @@ ul {
     color: rgb(182, 22, 22);
 }
 
-.home-title-d h1{
+.home-title-d h1 {
     font-family: 'Oswald', Arial, sans-serif;
     font-size: 3em;
     color: #ffffff;
-    margin-top: 250px; /* Adjust as needed to move the h1 element downward */
-    text-align: center; /* Center align the text */
+    margin-top: 250px;
+    /* Adjust as needed to move the h1 element downward */
+    text-align: center;
+    /* Center align the text */
 }
 
 
@@ -767,7 +769,7 @@ figcaption {
     border-top: 1px solid #ccc;
     /* Border to separate caption from image */
 }
- 
+
 
 
 
@@ -792,16 +794,21 @@ figcaption {
     box-sizing: border-box;
 }
 
-.custom-section, .weather, .displayWeather {
+.custom-section,
+.weather,
+.displayWeather {
     margin-bottom: 20px;
 }
 
-.custom-section h2, .weather h2, .displayWeather h2 {
+.custom-section h2,
+.weather h2,
+.displayWeather h2 {
     font-size: 1.5em;
     margin-bottom: 10px;
 }
 
-.holiday-list, #weatherInfo {
+.holiday-list,
+#weatherInfo {
     padding: 10px;
     border: 1px solid #ccc;
     background-color: #fff;
@@ -834,3 +841,93 @@ figure img {
     max-width: 100%;
     height: auto;
 }
+
+
+/* style.css */
+
+/* form.css */
+
+
+
+main {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    font-size: 1rem;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    /* Ensure padding and border are included in width */
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.membership-benefits {
+    background-color: rgb(0, 0, 0);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.membership-benefits h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.membership-benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.membership-benefits li {
+    margin-bottom: 5px;
+}
+
+/* Adjust input width for equal distribution */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select {
+    width: calc(100% - 22px);
+    /* Adjust based on padding and border */
+}
+

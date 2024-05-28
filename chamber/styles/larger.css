@@ -61,5 +61,64 @@
     #mainContent {
         flex-direction: row;
     }
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 15px;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    main {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+    input,
+    textarea,
+    select,
+    button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+    
 }
+
 
