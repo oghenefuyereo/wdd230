@@ -47,32 +47,32 @@
                 <label for="firstName" class="req">First Name</label>
                 <input type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
             </div>
-
+        
             <div class="form-group">
                 <label for="lastName" class="req">Last Name</label>
                 <input type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
             </div>
-
+        
             <div class="form-group">
                 <label for="title" class="req">Title/Position</label>
                 <input type="text" id="title" name="title" required pattern="[a-zA-Z\s-]{7,}" placeholder="Enter your title or position">
             </div>
-
+        
             <div class="form-group">
                 <label for="email" class="req">Email Address</label>
-                <input type="email" id="email" name="email" required placeholder="name@example.com">
+                <input type="email" id="email" name="email" required placeholder="name@byui.edu" pattern="[a-zA-Z0-9._%+-]+@byui\.edu">
             </div>
-
+        
             <div class="form-group">
                 <label for="phone" class="req">Mobile Phone Number</label>
                 <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
             </div>
-
+        
             <div class="form-group">
                 <label for="organization" class="req">Business/Organization Name</label>
                 <input type="text" id="organization" name="organization" required placeholder="Enter your organization name">
             </div>
-
+        
             <div class="form-group">
                 <label for="membershipLevel" class="req">Membership Level</label>
                 <select id="membershipLevel" name="membershipLevel" required>
@@ -83,16 +83,16 @@
                     <option value="Gold">Gold Membership</option>
                 </select>
             </div>
-
+        
             <div class="form-group">
                 <label for="description">Business/Organization Description</label>
                 <textarea id="description" name="description" rows="4" placeholder="Enter a brief description"></textarea>
             </div>
-
+        
             <input type="hidden" id="timestamp" name="timestamp" value="">
-
+        
             <button type="submit">Submit</button>
-        </form>
+        </form>        
 
         <div class="membership-benefits">
             <h2>Membership Benefits</h2>
