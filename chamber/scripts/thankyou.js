@@ -4,15 +4,15 @@ document.addEventListener("DOMContentLoaded", function () {
     const rangeInput = document.getElementById("yearsInBusiness");
     const rangeValueSpan = document.getElementById("selectedYears");
 
-    // Update range value display
+
     rangeInput.addEventListener("input", function () {
         updateSelectedYears();
     });
 
-    // Form submission event
+
     joinForm.addEventListener("submit", function (event) {
         if (!isValidEmail(emailInput.value)) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
             alert("Please enter a valid @byui.edu email address.");
         }
     });
@@ -22,13 +22,13 @@ document.addEventListener("DOMContentLoaded", function () {
         return emailPattern.test(email);
     }
 
-    // Function to update the selected years value when the range input changes
+
     function updateSelectedYears() {
         var selectedValue = rangeInput.value;
         rangeValueSpan.textContent = selectedValue;
     }
 
-    // Function to set the current timestamp value in the hidden input field
+
     var currentDateTime = new Date().toISOString().slice(0, 19).replace('T', ' ');
     document.getElementById('timestamp').value = currentDateTime;
 });
