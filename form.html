@@ -58,25 +58,28 @@
 
             <div class="form-group">
                 <label for="password" class="req">Password</label>
-                <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$" placeholder="At least 8 characters, alphanumeric" title="Password must be at least 8 characters long and contain only letters and numbers">
+                <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$"
+                    placeholder="At least 8 characters, alphanumeric"
+                    title="Password must be at least 8 characters long and contain only letters and numbers">
             </div>
 
             <div class="form-group">
                 <label for="confirmPassword" class="req">Confirm Password</label>
-                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter your password">
+                <input type="password" id="confirmPassword" name="confirmPassword" required
+                    placeholder="Re-enter your password">
             </div>
 
             <div class="form-group">
                 <label for="email" class="req">Email Address</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="name@byui.edu" title="Please enter a valid BYUI email address">
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$"
+                    placeholder="name@byui.edu" title="Please enter a valid BYUI email address">
             </div>
 
             <div class="form-group">
                 <label for="rating">Page Rating</label>
-                <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" oninput="updateRangeValue(this.value)">
-                <span id="rangeValue">5</span>
+                <input type="range" id="rating" name="rating" min="1" max="10" value="5" step="1" oninput="updateRangeValue(this.value)">
+                <p>Selected rating: <span id="rangeValue">5</span></p>
             </div>
-
             <button type="submit">Submit</button>
         </form>
     </main>
