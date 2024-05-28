@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/form.css">
     <link rel="icon" href="images/favicon.ico">
 </head>
 
@@ -32,7 +33,7 @@
             <li class="current-menu-item"><a
                     href="https://oghenefuyereo.github.io/wdd230/chamber/index.html">Chamber</a></li>
             <li class="current-menu-item"><a href="week01/chamber-site-plan.html">Site Plan</a></li>
-            <li class="current-menu-item"><a href="">Form</a></li>
+            <li class="current-menu-item"><a href="form.html">Form</a></li>
         </ul>
     </nav>
     <div class="hero">
@@ -45,24 +46,39 @@
     </div>
 
     <main>
-        <h1>WDD 230: Web Frontend Development</h1>
-        <div class="horizontal-line"></div>
-        <section class="card">
-            <h2>Learning Activities</h2>
-            <ul>
-                <li><a href="https://oghenefuyereo.github.io/wdd230/week01/holygrail.html">Learning Activity</a></li>
-                <li><a href="https://oghenefuyereo.github.io/wdd230/week02/design.html">Learning Activity</a></li>
-                <li><a href="https://oghenefuyereo.github.io/wdd230/week02/bom.html">Learning Activity</a></li>
-                <li><a href="week03/images/landscape.webp">Learning Activity</a></li>
-                <li><a href="https://oghenefuyereo.github.io/wdd230/Week03/responsive-images.html">Learning Activity</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <h2>Information</h2>
-            <p>Weather information will be here</p>
-            <div class="visits"></div>
-        </section>
+        <div id="formmessage"></div>
+        <h1>Contact Us</h1>
+        <form method="get" action="record.html" id="contactForm">
+            <p class="smaller">*️⃣ Indicates a required field</p>
+
+            <div class="form-group">
+                <label for="username" class="req">Username</label>
+                <input type="text" id="username" name="username" required placeholder="Enter your username">
+            </div>
+
+            <div class="form-group">
+                <label for="password" class="req">Password</label>
+                <input type="password" id="password" name="password" required pattern="^[a-zA-Z0-9]{8,}$" placeholder="At least 8 characters, alphanumeric" title="Password must be at least 8 characters long and contain only letters and numbers">
+            </div>
+
+            <div class="form-group">
+                <label for="confirmPassword" class="req">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Re-enter your password">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="req">Email Address</label>
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" placeholder="name@byui.edu" title="Please enter a valid BYUI email address">
+            </div>
+
+            <div class="form-group">
+                <label for="rating">Page Rating</label>
+                <input type="range" id="rating" name="rating" min="1" max="10" step="1" value="5" oninput="updateRangeValue(this.value)">
+                <span id="rangeValue">5</span>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
     </main>
     <div class="map-container">
         <iframe
@@ -77,6 +93,7 @@
         </p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/form.js"></script>
     <script src="scripts/getDate.js"></script>
     <script src="scripts/weather.js"></script>
 </body>
