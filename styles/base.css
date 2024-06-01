@@ -252,3 +252,38 @@ section {
     font-size: 1.2em; 
     margin-top: 20px; 
 }
+
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Add spacing between the icon and text */
+    font-family: Arial, sans-serif;
+}
+
+.weather-container img {
+    width: 50px; /* Set a fixed width to prevent distortion */
+    height: 50px; /* Set a fixed height to prevent distortion */
+}
+
+.weather-container p {
+    margin: 0;
+    font-size: 1rem; /* Ensure the text is readable */
+}
+.weather-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px; /* Space between the icon and text */
+    font-family: Arial, sans-serif;
+}
+
+.weather-container img {
+    width: 50px; /* Fixed width */
+    height: 50px; /* Fixed height */
+}
+
+.weather-container p {
+    margin: 0;
+    font-size: 1rem; /* Ensures readability */
+}
