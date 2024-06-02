@@ -42,52 +42,14 @@
         </section>
     </div>
     <main>
-        <section class="image-center">
-            <img src="images/Niagara-Falls-Logo-1.2-1024x941.png" class="events" alt="" loading="lazy">
-            <div class="title-chamber">
-                <h3>Niagara Falls Directory</h3>
-            </div>
-        </section>
-        <section class="image-center">
-            <picture>
-                <img src="images/logo-fe.svg" class="events" alt="" loading="lazy">
-            </picture>
-            <div class="title-chamber">
-                <h3>Greater Fort Erie Directory</h3>
-            </div>
-        </section>
-        <section class="image-center">
-            <img src="images/logo-wp.svg" class="events" alt="" loading="lazy">
-            <div class="title-chamber">
-                <h3>Welland/Pelham Directory</h3>
-            </div>
-        </section>
-        <section class="image-center">
-            <img src="images/logo-pc.svg" class="events" alt="">
-            <div class="title-chamber">
-                <h3>Port Colborne-Wainfleet Directory</h3>
-            </div>
-        </section>
-        <section class="custom-section">
-            <h2>Canadian Public Holidays</h2>
-            <div id="holidaysList" class="holiday-list"></div>
-        </section>
-        <section class="weather">
-            <h2>Weather Forecast Update</h2>
-            <h3>Chamber of Commerce</h3>
-            <p>
-                Weather information will be here
-            </p>
-        </section>
-
-        <section class="displayWeather">
-            <h2>Weather Forecast</h2>
-            <h3>Chamber of Commerce</h3>
-            <p id="weatherInfo"></p> <!-- Updated: Added an id to the <p> element -->
-            <input type="text" id="locationInput" placeholder="Enter location">
-            <button onclick="getWeather()">Get Weather</button>
-        </section>
-
+        <div class="menu">
+            <button id="grid">⏹️ Grid</button>
+            <button id="list">📄 List</button>
+        </div>
+        <hr>
+        <article class="grid">
+            <!-- Member sections will be dynamically inserted here by JavaScript -->
+        </article>
     </main>
 
     <footer class="footer">
@@ -162,10 +124,7 @@
         </p>
         <p id="lastModified"></p>
     </footer>
-    <script src="scripts/event.js"></script>
-    <script src="scripts/getDate.js"></script>
-    <script src="scripts/weather-input.js"></script>
-    <script src="scripts/weather.js"></script>
+    <script src="scripts/business.js"></script>
 </body>
 
 </html>
