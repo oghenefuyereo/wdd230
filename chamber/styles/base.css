@@ -973,18 +973,15 @@ nav ul li {
 
 .grid img {
     border: 1px solid #fff;
-    box-shadow: 0 0 10px #333;
     height: auto;
-    width: 200px;
+    width: 300px;
 }
 
 .grid section > * {
     margin: 0.1rem;
 }
 
-.grid h3 {
-    font-family: "Caveat", cursive;
-}
+
 
 .list {
     display: flex;
@@ -1058,7 +1055,24 @@ img {
 
 }
 
+@media screen and (max-width: 768px) {
+    .list section {
 
+        grid-template-columns: 1fr; /* Single column layout */
+        padding: 10px; /* Adjust padding */
+    }
 
+    .list section h3 {
+        font-size: 1rem; /* Adjust heading size */
+    }
+
+    .list section p {
+        font-size: 0.8rem; /* Adjust paragraph size */
+    }
+
+    .list section a {
+        font-size: 0.7rem; /* Adjust link size */
+    }
+}
 
 

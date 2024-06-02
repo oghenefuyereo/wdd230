@@ -1,48 +1,75 @@
 [
     {
         "name": "Bluestipple Inc.",
-        "address": "123 Main St, Anytown, USA",
-        "phone": "555-1234",
+        "address": "111 Silvan Drive, Welland, Canada",
+        "phone": "(437) 249-5427",
         "website": "http://www.bluestipple.com",
-        "image": "companyone.png",
+        "image": "bluestipple.jpg",
         "membershipLevel": "Gold",
         "additionalInfo": "Specializes in innovative tech solutions."
     },
     {
-        "name": "Company Two",
-        "address": "456 Side St, Anycity, USA",
-        "phone": "555-5678",
-        "website": "http://www.companytwo.com",
-        "image": "companytwo.png",
+        "name": "Microsoft",
+        "address": "Redmond, Washington, United States",
+        "phone": " 1 (877) 568-2495",
+        "website": "https://www.microsoft.com",
+        "image": "microsoft.webp",
         "membershipLevel": "Silver",
-        "additionalInfo": "Leading provider of financial services."
+        "additionalInfo": "IT corporation"
     },
     {
-        "name": "Company Three",
-        "address": "789 Market Rd, Somewhere, USA",
-        "phone": "555-9101",
-        "website": "http://www.companythree.com",
-        "image": "companythree.png",
+        "name": "Tim Hortons",
+        "address": "30 Rice Rd, Welland, ON L3C 5Y6",
+        "phone": "(905) 714-0422",
+        "website": "https://www.timhortons.ca",
+        "image": "timhortons.png",
         "membershipLevel": "Bronze",
-        "additionalInfo": "Expert in marketing and advertising."
+        "additionalInfo": "Restaurant chain"
     },
     {
-        "name": "Company Four",
-        "address": "321 Elm St, Othercity, USA",
-        "phone": "555-1122",
-        "website": "http://www.companyfour.com",
-        "image": "companyfour.png",
+        "name": "Burger King",
+        "address": "724 Niagara St, Welland, ON L3C 1M3",
+        "phone": "(905) 788-2811",
+        "website": "burgerking.ca",
+        "image": "burgerking.png",
         "membershipLevel": "Gold",
-        "additionalInfo": "Pioneer in sustainable energy solutions."
+        "additionalInfo": "Restaurant chain"
     },
     {
-        "name": "Company Five",
-        "address": "654 Oak St, Anothertown, USA",
-        "phone": "555-3344",
-        "website": "http://www.companyfive.com",
-        "image": "companyfive.png",
+        "name": "Walmart",
+        "address": "Bentonville, Arkansas, United States",
+        "phone": "(905) 735-3500",
+        "website": "https://www.walmart.com",
+        "image": "walmart.webp",
         "membershipLevel": "Silver",
         "additionalInfo": "Provider of top-notch healthcare services."
+    },
+    {
+        "name": "Company Six",
+        "address": "987 Pine St, Yetanothertown, USA",
+        "phone": "555-5566",
+        "website": "http://www.companysix.com",
+        "image": "companysix.png",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "Specializes in real estate and property management."
+    },
+    {
+        "name": "Company Six",
+        "address": "987 Pine St, Yetanothertown, USA",
+        "phone": "555-5566",
+        "website": "http://www.companysix.com",
+        "image": "companysix.png",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "Specializes in real estate and property management."
+    },
+    {
+        "name": "Company Six",
+        "address": "987 Pine St, Yetanothertown, USA",
+        "phone": "555-5566",
+        "website": "http://www.companysix.com",
+        "image": "companysix.png",
+        "membershipLevel": "Bronze",
+        "additionalInfo": "Specializes in real estate and property management."
     },
     {
         "name": "Company Six",

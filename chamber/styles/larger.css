@@ -43,6 +43,7 @@
     ul.menuLinks a:hover {
         background-color: rgba(255, 255, 255, 0.2);
     }
+
     .sidebar {
         width: 300px;
         flex-shrink: 0;
@@ -51,6 +52,7 @@
     .main-content {
         flex-grow: 1;
     }
+
     .sidebar {
         width: 400px;
     }
@@ -58,9 +60,11 @@
     .main-content {
         padding: 20px 40px;
     }
+
     #mainContent {
         flex-direction: row;
     }
+
     main {
         grid-template-columns: 1fr;
     }
@@ -76,6 +80,7 @@
     button {
         font-size: 1rem;
     }
+
     main {
         padding: 15px;
     }
@@ -99,6 +104,7 @@
         font-size: 0.9rem;
         padding: 8px;
     }
+
     main {
         padding: 15px;
     }
@@ -118,22 +124,27 @@
         font-size: 0.9rem;
         padding: 8px;
     }
+
     .list section {
-        grid-template-columns: 1fr; /* Single column layout */
-        padding: 10px; /* Adjust padding */
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        padding: 10px;
+        /* Adjust padding */
     }
 
     .list section h3 {
-        font-size: 1rem; /* Adjust heading size */
+        font-size: 1rem;
+        /* Adjust heading size */
     }
 
     .list section p {
-        font-size: 0.8rem; /* Adjust paragraph size */
+        font-size: 0.8rem;
+        /* Adjust paragraph size */
     }
 
     .list section a {
-        font-size: 0.7rem; /* Adjust link size */
+        font-size: 0.7rem;
+        /* Adjust link size */
     }
+    
 }
-
-
