@@ -974,6 +974,8 @@ nav ul li {
 .grid img {
     border: 1px solid #fff;
     box-shadow: 0 0 10px #333;
+    height: auto;
+    width: 200px;
 }
 
 .grid section > * {

@@ -1,9 +1,9 @@
 [
     {
-        "name": "Company One",
+        "name": "Bluestipple Inc.",
         "address": "123 Main St, Anytown, USA",
         "phone": "555-1234",
-        "website": "http://www.companyone.com",
+        "website": "http://www.bluestipple.com",
         "image": "companyone.png",
         "membershipLevel": "Gold",
         "additionalInfo": "Specializes in innovative tech solutions."
