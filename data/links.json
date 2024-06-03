@@ -10,6 +10,10 @@
                 {
                     "url": "week01/media-query.html",
                     "title": "Media Queries"
+                },
+                {
+                    "url": "week01/chamber-site-plan.html",
+                    "title": "Chamber Site Plan"
                 }
             ]
         },
@@ -17,11 +21,11 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url": "week02/flexbox.html",
-                    "title": "Flexbox Basics"
+                    "url": "week02/bom.html",
+                    "title": "Bom"
                 },
                 {
-                    "url": "week02/responsive-design.html",
+                    "url": "week02/design.html",
                     "title": "Responsive Design"
                 }
             ]
@@ -30,12 +34,12 @@
             "week": "Week 3",
             "links": [
                 {
-                    "url": "week03/grid-layout.html",
-                    "title": "Grid Layout"
+                    "url": "week03/image-effect.html",
+                    "title": "Image Effect"
                 },
                 {
-                    "url": "week03/animation-css.html",
-                    "title": "CSS Animation"
+                    "url": "week03/responsive-images.html",
+                    "title": "Responsive Images"
                 }
             ]
         },
@@ -43,8 +47,8 @@
             "week": "Week 4",
             "links": [
                 {
-                    "url": "week04/javascript-basics.html",
-                    "title": "JavaScript Basics"
+                    "url": "week04/tablebuild.html",
+                    "title": "Table Build"
                 },
                 {
                     "url": "week04/events-dom.html",
