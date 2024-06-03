@@ -1,0 +1,69 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "week01/holygrail.html",
+                    "title": "Holy Grail Layout"
+                },
+                {
+                    "url": "week01/media-query.html",
+                    "title": "Media Queries"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "week02/flexbox.html",
+                    "title": "Flexbox Basics"
+                },
+                {
+                    "url": "week02/responsive-design.html",
+                    "title": "Responsive Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "week03/grid-layout.html",
+                    "title": "Grid Layout"
+                },
+                {
+                    "url": "week03/animation-css.html",
+                    "title": "CSS Animation"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "week04/javascript-basics.html",
+                    "title": "JavaScript Basics"
+                },
+                {
+                    "url": "week04/events-dom.html",
+                    "title": "Events and DOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "week05/ajax-requests.html",
+                    "title": "AJAX Requests"
+                },
+                {
+                    "url": "week05/local-storage.html",
+                    "title": "Local Storage"
+                }
+            ]
+        }
+    ]
+}
