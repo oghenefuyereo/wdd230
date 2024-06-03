@@ -72,12 +72,12 @@
         "additionalInfo": "Fast food restaurant chain"
     },
     {
-        "name": "Company Six",
+        "name": "Winners",
         "address": "987 Pine St, Yetanothertown, USA",
-        "phone": "555-5566",
-        "website": "http://www.companysix.com",
-        "image": "companysix.png",
+        "phone": "1 (800) 646-9466",
+        "website": "https://www.winners.ca",
+        "image": "winners.webp",
         "membershipLevel": "Bronze",
-        "additionalInfo": "Specializes in real estate and property management."
+        "additionalInfo": "Chain"
     }
 ]
