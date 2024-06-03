@@ -42,34 +42,34 @@
         "website": "https://www.walmart.com",
         "image": "walmart.webp",
         "membershipLevel": "Silver",
-        "additionalInfo": "Provider of top-notch healthcare services."
+        "additionalInfo": "Retail company"
     },
     {
-        "name": "Company Six",
-        "address": "987 Pine St, Yetanothertown, USA",
-        "phone": "555-5566",
-        "website": "http://www.companysix.com",
-        "image": "companysix.png",
+        "name": "Canadian Tire",
+        "address": "158 Primeway Drive Welland, Ontario, L3B 0A1",
+        "phone": "(905) 732-7501",
+        "website": "https://www.canadiantire.ca",
+        "image": "canadiantire.webp",
         "membershipLevel": "Bronze",
-        "additionalInfo": "Specializes in real estate and property management."
+        "additionalInfo": "Retail company"
     },
     {
-        "name": "Company Six",
-        "address": "987 Pine St, Yetanothertown, USA",
-        "phone": "555-5566",
-        "website": "http://www.companysix.com",
-        "image": "companysix.png",
+        "name": "Niagara College",
+        "address": "100 Niagara College Blvd, Welland, ON L3C 7L3",
+        "phone": "(905) 735-2211",
+        "website": "https://www.niagaracollege.ca",
+        "image": "niagaracollege.webp",
         "membershipLevel": "Bronze",
-        "additionalInfo": "Specializes in real estate and property management."
+        "additionalInfo": "Institution"
     },
     {
-        "name": "Company Six",
-        "address": "987 Pine St, Yetanothertown, USA",
-        "phone": "555-5566",
-        "website": "http://www.companysix.com",
-        "image": "companysix.png",
+        "name": "KFC",
+        "address": "KFC, 815 Ontario Rd, Welland, ON L3B 5V6",
+        "phone": "(905) 732-7894",
+        "website": "https://www.kfc.ca",
+        "image": "kfc.webp",
         "membershipLevel": "Bronze",
-        "additionalInfo": "Specializes in real estate and property management."
+        "additionalInfo": "Fast food restaurant chain"
     },
     {
         "name": "Company Six",
