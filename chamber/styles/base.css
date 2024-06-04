@@ -485,9 +485,11 @@ hr {
 .button img:hover {
     outline-color: rgb(244, 0, 0);
 }
-.button img{
+
+.button img {
     height: auto;
 }
+
 nav ul li {
     display: inline-block;
     margin-right: 20px;
@@ -953,7 +955,7 @@ nav ul li {
     margin: 1rem auto;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0.5rem;
-    
+
     text-align: center;
 }
 
@@ -979,7 +981,7 @@ nav ul li {
     width: 300px;
 }
 
-.grid section > * {
+.grid section>* {
     margin: 0.1rem;
 }
 
@@ -997,12 +999,13 @@ nav ul li {
     padding: 0.25rem;
 }
 
-.list section > * {
+.list section>* {
     margin: 0 1rem;
 }
 
 .list section img {
-    display: none; /* smaller viewports only */
+    display: none;
+    /* smaller viewports only */
 }
 
 .list section h3 {
@@ -1033,13 +1036,15 @@ section a {
 
 img {
     height: 75px;
-    max-width: 100%; /* Images are jerks - Seattle */
+    max-width: 100%;
+    /* Images are jerks - Seattle */
 }
-#list{
+
+#list {
     margin: 5px 0px;
 }
 
-#grid{
+#grid {
     margin: 5px 0px;
 }
 
@@ -1060,21 +1065,50 @@ img {
 @media screen and (max-width: 768px) {
     .list section {
 
-        grid-template-columns: 1fr; /* Single column layout */
-        padding: 10px; /* Adjust padding */
+        grid-template-columns: 1fr;
+        /* Single column layout */
+        padding: 10px;
+        /* Adjust padding */
     }
 
     .list section h3 {
-        font-size: 1rem; /* Adjust heading size */
+        font-size: 1rem;
+        /* Adjust heading size */
     }
 
     .list section p {
-        font-size: 0.8rem; /* Adjust paragraph size */
+        font-size: 0.8rem;
+        /* Adjust paragraph size */
     }
 
     .list section a {
-        font-size: 0.7rem; /* Adjust link size */
+        font-size: 0.7rem;
+        /* Adjust link size */
     }
 }
 
 
+#city,
+#current-temp,
+#weather-description,
+.forecast-item {
+    color: black;
+}
+
+.banner {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    display: none;
+    /* Initially hide the banner */
+}
+
+.banner p {
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+    /* Hide the banner */
+}

@@ -60,7 +60,6 @@
         <section>
             <h2>Niagara Falls</h2>
             <h3>Chamber of Commerce</h3>
-
             <div class="grid-container">
                 <a href="#" class="button"><img src="images/icons8-home-50.png" alt="Icon 1"> Home</a>
                 <a href="#" class="button"><img src="images/icons8-news-50.png" alt="Icon 2">Discover</a>
@@ -135,13 +134,21 @@
                 <li>Commisso’s Fresh Foods, Niagara Falls</li>
             </ul>
         </section>
+        <section>
 
-        <section class="weather">
-            <h2>Weather Forecast Update</h2>
-            <h3>Chamber of Commerce</h3>
-            <p>
-                Weather information will be here
-            </p>
+            <div class="current-weather">
+                <h2>Current Weather</h2>
+                <p><span id="city"></span></p>
+                <p><span id="current-temp"></span></p>
+                <p><span id="weather-description"></span></p>
+            </div>
+
+            <div class="forecast">
+                <h2>3-Day Forecast</h2>
+                <div class="forecast-container" id="forecast-container">
+                    <!-- Forecast items will be dynamically added here -->
+                </div>
+            </div>
         </section>
         <section class="displayWeather">
             <h2>Weather Forecast</h2>
@@ -150,8 +157,20 @@
             <input type="text" id="locationInput" placeholder="Enter location">
             <button onclick="getWeather()">Get Weather</button>
         </section>
+ 
+        <hr>
+        <article class="grid">
+            <section class="spotlight">
+                <h2>Spotlight Members</h2>
+                <div id="spotlight-members"></div>
+            </section>
+        </article>
 
-
+        <div id="banner" class="banner hidden">
+            <p>Join us for the Chamber of Commerce meet and greet on Wednesday at 7:00 p.m.!</p>
+            <button id="closeBannerBtn">Close</button>
+        </div>
+        
     </main>
 
     <footer class="footer">
@@ -226,7 +245,9 @@
         </p>
         <p id="lastModified"></p>
     </footer>
+    <script src="scripts/app.js"></script>
     <script src="scripts/getDate.js"></script>
+    <script src="scripts/spotlight.js"></script>
     <script src="scripts/weather-input.js"></script>
     <script src="scripts/weather.js"></script>
 </body>
