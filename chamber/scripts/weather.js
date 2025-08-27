@@ -11,8 +11,8 @@ function getCurrentWeather(latitude, longitude, apiKey) {
         })
         .then(data => {
             displayCurrentWeather(data);
-            // Once current weather is fetched, fetch the 3-day forecast
-            fetchThreeDayForecast(latitude, longitude, apiKey);
+            // Fetch the 7-day forecast
+            fetchSevenDayForecast(latitude, longitude, apiKey);
         })
         .catch(error => {
             console.error('Error:', error);
@@ -30,7 +30,6 @@ function displayCurrentWeather(data) {
         cityElement.textContent = `${data.name}`;
         currentTempElement.textContent = `${data.main.temp}°C`;
 
-        // Conditionally set weather description label based on weather conditions
         const weatherDescription = data.weather[0].description.toLowerCase();
         if (weatherDescription.includes('rain')) {
             weatherDescriptionElement.textContent = 'Rainy';
@@ -46,9 +45,9 @@ function displayCurrentWeather(data) {
     }
 }
 
-// Function to fetch 3-day forecast
-function fetchThreeDayForecast(latitude, longitude, apiKey) {
-    const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+// Function to fetch 7-day forecast
+function fetchSevenDayForecast(latitude, longitude, apiKey) {
+    const apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&exclude=current,minutely,hourly,alerts&appid=${apiKey}&units=metric`;
 
     fetch(apiUrl)
         .then(response => {
@@ -58,7 +57,7 @@ function fetchThreeDayForecast(latitude, longitude, apiKey) {
             return response.json();
         })
         .then(data => {
-            displayThreeDayForecast(data.list);
+            displaySevenDayForecast(data.daily);
         })
         .catch(error => {
             console.error('Error:', error);
@@ -66,24 +65,17 @@ function fetchThreeDayForecast(latitude, longitude, apiKey) {
         });
 }
 
-// Function to display 3-day forecast
-function displayThreeDayForecast(data) {
+// Function to display 7-day forecast
+function displaySevenDayForecast(dailyData) {
     const forecastContainer = document.getElementById('forecast-container');
     if (forecastContainer) {
         forecastContainer.innerHTML = ''; // Clear previous forecast data
 
-        // Filter data for forecast at noon for the next 3 days
-        const filteredData = data.filter(item => {
-            // Extract date and time from item.dt_txt
-            const date = new Date(item.dt_txt);
-            return date.getHours() === 12; // Assuming we want the forecast at noon
-        });
-
-        // Display forecast for each day
-        filteredData.slice(0, 3).forEach(item => {
-            const date = new Date(item.dt_txt);
-            const temp = item.main.temp;
-            const weatherDescription = item.weather[0].description;
+        // Display forecast for the next 7 days
+        dailyData.slice(0, 7).forEach(day => {
+            const date = new Date(day.dt * 1000); // Convert timestamp to date
+            const temp = day.temp.day;
+            const weatherDescription = day.weather[0].description;
 
             const forecastItem = document.createElement('div');
             forecastItem.classList.add('forecast-item');
@@ -105,7 +97,7 @@ function getLocationAndWeather() {
         navigator.geolocation.getCurrentPosition(position => {
             const latitude = position.coords.latitude;
             const longitude = position.coords.longitude;
-            const apiKey = '8c69e35966006ee4625d59e5f1bed11f'; // Replace with your actual OpenWeatherMap API key
+            const apiKey = '8c69e35966006ee4625d59e5f1bed11f';
             getCurrentWeather(latitude, longitude, apiKey);
         }, error => {
             console.error('Error getting location:', error);
